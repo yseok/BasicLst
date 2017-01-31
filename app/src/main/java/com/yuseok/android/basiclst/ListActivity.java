@@ -22,6 +22,7 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
+
         // 1. 리스트뷰를 가져온다.
         listView = (ListView) findViewById(R.id.listView);
 
@@ -57,10 +58,6 @@ public class ListActivity extends AppCompatActivity {
 
             // 3. 액티비티 호출
             startActivity(intent);
-
-
         }
     };
-
-
 }

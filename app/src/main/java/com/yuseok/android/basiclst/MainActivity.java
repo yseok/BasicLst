@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity{
 
-    Button btnList, btnHolder, btnRecycler;
+    Button btnList, btnHolder, btnRecycler, btnCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,11 +18,13 @@ public class MainActivity extends AppCompatActivity{
 
         btnList = (Button)findViewById(R.id.btnList);
         btnHolder= (Button) findViewById(R.id.btnHolder);
-        btnRecycler = (Button) findViewById(R.id.btnHolder);
+        btnRecycler = (Button) findViewById(R.id.btnRecycle);
+        btnCard = (Button) findViewById(R.id.btnCard);
 
         btnList.setOnClickListener(Listener);
         btnHolder.setOnClickListener(Listener);
         btnRecycler.setOnClickListener(Listener);
+        btnCard.setOnClickListener(Listener);
     }
 
 
@@ -44,6 +46,10 @@ public class MainActivity extends AppCompatActivity{
                     break;
                 case R.id.btnRecycle:
                     intent = new Intent(MainActivity.this, RecyclerActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.btnCard:
+                    intent = new Intent(MainActivity.this, RecyclerCardActivity.class);
                     startActivity(intent);
                     break;
             }

@@ -38,4 +38,14 @@
         android:layout_below="@+id/btnList"
         android:layout_alignLeft="@+id/btnList"
         android:layout_alignStart="@+id/btnList" />
+
+    <Button
+        android:text="card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRecycle"
+        android:layout_alignLeft="@+id/btnHolder"
+        android:layout_alignStart="@+id/btnHolder"
+        android:layout_marginTop="46dp"
+        android:id="@+id/btnCard" />
 </RelativeLayout>
